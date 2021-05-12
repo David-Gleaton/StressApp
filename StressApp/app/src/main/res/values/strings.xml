@@ -1,0 +1,227 @@
+<resources>
+    <string name="app_name">StressApp</string>
+
+    <string-array name="Themes">
+        <item>Dark Theme</item>
+        <item>Red Theme</item>
+    </string-array>
+    <string name="options">Options</string>
+    <string name="confirm">Confirm</string>
+
+    <string name="TitleCard">Lose The Stress</string>
+
+
+    <!-- Dev Strings -->
+    <string name="DevGenerateTable">Generate Database Values</string>
+    <string name="DevButton">Developer</string>
+
+    <!-- Menu items -->
+    <string name="settings">Settings</string>
+    <string name="Home">Home</string>
+    <string name="Input">Input</string>
+    <string name="Graphs">Graphs</string>
+    <string name="Distractions">Distractions</string>
+    <string name="profile">Profile</string>
+
+
+    <!-- Graph for Data-->
+    <string name="graphtitletitle">Choose Which Type of Data to See Graphed</string>
+
+
+    <!-- Graph Eating -->
+    <string name="EatingGraphTitle">Calorie Data</string>
+    <string name="DailyEatingBlurbFirst">You have taken in\u0020</string>
+    <string name="DailyEatingBlurbSecond">\u0020calories on\u0020</string>
+    <string name="NullEating">You have not put any data in for today!</string>
+    <string name="EatWeek">Calories Over the Last 7 Days</string>
+    <string name="EatMonth">Calories Over the Month</string>
+
+    <!-- Graph Sleeping -->
+    <string name="SleepGraphTitle">Sleep Data</string>
+    <string name="DailySleepBlurbFirst">You have slept\u0020</string>
+    <string name="DailySleepBlurbSecond">\u0020hours on\u0020</string>
+    <string name="NullSleep">You have not put any data in for today!</string>
+    <string name="SleepWeek">Sleep Hours Over the Last 7 Days</string>
+    <string name="SleepMonth">Sleep Hours Over the Month</string>
+
+    <!-- Graph Excercise -->
+    <string name="ExcerciseGraphTitle">Exercise Data</string>
+    <string name="DailyExcerciseBlurbFirst">You have exercised\u0020</string>
+    <string name="DailyExcerciseBlurbSecond">\u0020hours on\u0020</string>
+    <string name="NullExcercise">You have not put any data in for today!</string>
+    <string name="ExcerciseWeek">Exercise Hours Over the Last 7 Days</string>
+    <string name="ExcerciseMonth">Exercise Hours Over the Month</string>
+
+    <!-- Graph Finance -->
+    <string name="FinanceGraphTitle">Finance Data</string>
+    <string name="DailyFinanceBlurbFirst">You have spent\u0020$</string>
+    <string name="DailyFinanceBlurbSecond">\u0020on\u0020</string>
+    <string name="NullFinance">You have not put any data in for today!</string>
+    <string name="FinanceWeek">$$$ Spent Over the Last 7 Days</string>
+    <string name="FinanceMonth">$$$ Spent Over the Month</string>
+
+    <!-- Graph Social -->
+    <string name="SocialGraphTitle">Social Data</string>
+    <string name="DailySocialBlurbFirst">You have socialized\u0020</string>
+    <string name="DailySocialBlurbSecond">\u0020hours on\u0020</string>
+    <string name="NullSocial">You have not put any data in for today!</string>
+    <string name="SocialWeek">Social Hours Over the Last 7 Days</string>
+    <string name="SocialMonth">Social Hours Over the Month</string>
+    <string name="SocialWeek2">Unique Interactions Over the Last 7 Days</string>
+    <string name="SocialMonth2">Unique Interactions Over the Month</string>
+
+    <!-- Graph Mood -->
+    <string name="MoodGraphTitle">Mood Data</string>
+    <string name="DailyMoodBlurbFirst">You have felt\u0020</string>
+    <string name="DailyMoodBlurbSecond">\u0020 on\u0020</string>
+    <string name="NullMood">You have not put any data in for today!</string>
+    <string name="MoodWeek">Mood Over the Last 7 Days</string>
+    <string name="MoodMonth">Mood Over the Month</string>
+
+
+
+    <!-- Input for Data -->
+    <!-- Input Data Buttons -->
+    <string name="inputtitletitle">Choose Which Type of Data to Input</string>
+    <string name="eating">Eating Habits</string>
+    <string name="sleeping">Sleeping Habits</string>
+    <string name="exercise">Exercise</string>
+    <string name="social">Social Interaction</string>
+    <string name="finances">Finances</string>
+    <string name="mental">Mental Health</string>
+    <string name="back">Back</string>
+
+    <!-- Eating -->
+    <string name="TitleEating">Enter How Many Calories You Took in Today</string>
+    <string name="DefaultEating">0</string>
+    <string name="DefaultDouble">0.00</string>
+    <string name="Breakfast">Breakfast:\u0020</string>
+    <string name="Lunch">Lunch:\u0020</string>
+    <string name="Dinner">Dinner:\u0020</string>
+
+    <!-- Sleeping -->
+    <string name="TitleSleeping">Enter When You Awoke and Slept</string>
+    <string name="DefaultSleeping">8:00</string>
+    <string name="DefaultWaking">6:00</string>
+    <string name="Woke_Up">Woke Up</string>
+    <string name="Slept">Bed Time</string>
+    <string name="am">a.m.</string>
+    <string name="pm">p.m.</string>
+
+    <!-- Exercise -->
+    <string name="TitleExercise">Enter How Many Hours or Minutes You Exercised Today</string>
+    <string name="Hours">Hours:\u0020</string>
+    <string name="Mins">Minutes:\u0020</string>
+    <string name="SubExcerciseHeading">Hour and minute input exceeding 24 or 59 respectively will be rounded down</string>
+
+    <!-- Social -->
+    <string name="TitleSocial">Enter How Many Hours or Minutes You Spoke With Someone Today</string>
+    <string name="HowManyPeople"># of Unique Interactions:\u0020</string>
+
+    <!-- Finances -->
+    <string name="TitleFinance">Enter How Much You Spent Today</string>
+    <string name="HowMuchDough">Money Spent:\u0020</string>
+    <string name="SubFinancesHeading">Any decimal place beyond the 0.00 will be rounded</string>
+
+    <!-- Mental -->
+    <string name="TitleMental">How Are You Feeling Today?</string>
+
+    <string name="distractiontitletitle">Which Distraction Do You Need?</string>
+    <string name="bubbles">Bubble Pop</string>
+    <string name="ambient">Ambient Sounds</string>
+    <string name="math_button">Simple Math</string>
+
+    <!-- Ambient Music -->
+    <string name="ambient_title">What Type of Sounds Would You Like To Listen To?</string>
+    <string name="waves">Ocean Waves</string>
+    <string name="chimes">Wind Chimes</string>
+    <string name="fire">Fireplace</string>
+
+    <!-- Math -->
+    <string name="math_title">Math Problem</string>
+    <string name="math_heading">Here Are Some Simple Math Problems</string>
+    <string name="math_hint">Put Your Answer Here</string>
+    <string name="answer_button">Check Answer</string>
+    <array name="math_symbols">
+        <item>+</item>
+        <item>-</item>
+        <item>*</item>
+    </array>
+    <string name="correct">Congrats! You Got It Right!</string>
+    <string name="wrong">Sorry, You Got It Wrong. The Answer Was: </string>
+
+    <!-- Exercise -->
+    <string name="exercise_button">Exercise</string>
+    <string name="exercise_title">Choose One Of The Exercises/Healthy Activities Below!</string>
+    <string name="exercise1">Exercise 1</string>
+    <string name="exercise2">Exercise 2</string>
+    <string name="exercise3">Exercise 3</string>
+    <array name="exercise_types">
+        <item>Pushups</item>
+        <item>Situps</item>
+        <item>Crunches</item>
+        <item>Burpies</item>
+        <item>Seconds Doing Your Favorite Yoga Pose</item>
+        <item>Laps Around The Room</item>
+        <item>Seconds Stretching</item>
+        <item>Minutes Spent Outside</item>
+        <item>Sips Of Water</item>
+        <item>Things You Like About Yourself</item>
+        <item>Things That Make You Happy</item>
+        <item>Things That Make You Laugh</item>
+    </array>
+    <string name="exercise_cheer">Way to Go!</string>
+
+    <!-- Compliments -->
+    <string name="encouragements_button">Encouragement</string>
+    <string name="encourage_text">Encourage Text</string>
+    <array name="encouragements">
+        <item>You are loved.</item>
+        <item>You are enough.</item>
+        <item>You still have time.</item>
+        <item>We believe in you.</item>
+        <item>You are important.</item>
+        <item>You are strong.</item>
+        <item>You matter.</item>
+        <item>“It takes a great deal of courage to stand up to your enemies, but even more to stand up to your friends.” — J.K. Rowling</item>
+        <item>“Nobody cares if you can’t dance well. Just get up and dance. Great dancers are not great because of their technique, they are great because of their passion.” — Martha Graham</item>
+        <item>“The most beautiful thing you can wear is confidence.” — Blake Lively</item>
+        <item>“No one can make you feel inferior without your consent.” — Eleanor Roosevelt</item>
+        <item>“Always be a first-rate version of yourself, instead of a second-rate version of somebody else.” — Judy Garland</item>
+        <item>“The most effective way to do it, is to do it.” — Amelia Earhart</item>
+        <item>“If you don’t have any shadows you’re not in the light.” — Lady Gaga</item>
+        <item>“A man may fail many times but he isn’t a failure until he begins to blame somebody else.” – John Burroughs</item>
+        <item>“Anyone can hide. Facing up to things, working through them, that’s what makes you strong.” – Sarah Dessen</item>
+        <item>“If one dream should fall and break into a thousand pieces, never be afraid to pick one of those pieces up and begin again.” – Flavia Weedn</item>
+        <item>“When one door of happiness closes, another opens, but often we look so long at the closed door that we do not see the one that has been opened for us.” – Helen Keller</item>
+        <item>“I’ve missed more than 9000 shots in my career. I’ve lost almost 300 games. 26 times, I’ve been trusted to take the game winning shot and missed. I’ve failed over and over and over again in my life. And that is why I succeed.” – Michael Jordan</item>
+        <item>“Success is not final, failure is not fatal: it is the courage to continue that counts.” – Winston Churchill</item>
+        <item>“Remember that failure is an event, not a person.” – Zig Ziglar</item>
+        <item>“Courage doesn’t always roar. Sometimes courage is the quiet voice at the end of the day saying, “I will try again tomorrow.” – Mary Anne Radmacher</item>
+        <item>“In a moment of decision, the best thing you can do is the right thing to do, the next best thing is the wrong thing, and the worst thing you can do is nothing.” – Theodore Roosevelt</item>
+        <item>“Success does not consist in never making mistakes but in never making the same one a second time.” – George Bernard Shaw</item>
+        <item>“Try not to become a person of success, but rather try to become a person of value.” – Albert Einstein</item>
+        <item>“Take time to deliberate; but when the time for action arrives, stop thinking and go in.” – Napoleon Bonaparte</item>
+        <item>“Don’t wait. The time will never be just right.” – Napoleon Hill</item>
+        <item>“You can make more friends in two months by becoming interested in other people than you can in two years by trying to get other people interested in you.” – Dale Carnegie</item>
+        <item>“Love is not only something you feel, it is something you do.” – David Wilkerson</item>
+        <item>“Just because it didn’t last forever, doesn’t mean it wasn’t worth your while.” – Unknown</item>
+    </array>
+
+    <!-- Profile -->
+    <string name="profile_title">Profile</string>
+    <string name="profile_hint">Insert Name Here</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="greeting">Welcome back</string>
+    <string name="excite">!</string>
+    <string name="success">Successfully stored your profile!</string>
+    <string name="path">/Android/data/com.example.stressapp/</string>
+    <string name="find_fail">Failed to find image file to display</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+</resources>

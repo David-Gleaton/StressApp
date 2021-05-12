@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"
+    tools:context=".InputDataInput">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/InputTitleTextInput"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            style="@style/MediumTextTitle"
+            android:text="@string/TitleFinance"/>
+
+        <TextView
+            android:id="@+id/TextforMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_below="@id/InputTitleTextInput"
+            style="@style/MediumTextTitle"
+            android:text="@string/HowMuchDough"
+            />
+
+        <EditText
+            android:id="@+id/EditMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/TextforMoney"
+            android:layout_alignBaseline="@id/TextforMoney"
+            style="@style/MediumTextTitle"
+            android:text="@string/DefaultDouble"
+            android:inputType="numberDecimal"
+            />
+
+
+        <Button
+            android:id="@+id/Confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EditMoney"
+            android:text="@string/confirm"
+            android:onClick="FinanceConfirm"
+            />
+        <TextView
+            android:id="@+id/SubInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Confirm"
+            style="@style/SubTextTitle"
+            android:text="@string/SubFinancesHeading"
+            />
+
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

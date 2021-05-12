@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- Light Red -->
+    <!-- TitleButton -->
+    <style name="DarkTitleButton" parent="android:style/Widget.Button">
+        <item name="android:backgroundTint">@color/darkgrey</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+
+
+    <style name="RedTitleButton" parent="android:style/Widget.Button">
+        <item name="android:backgroundTint">@color/RichRed</item>
+        <item name="android:textColor">@color/Cyan</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <!-- Title Sizes-->
+    <style name="MediumTextTitle">
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="BigTextTitle">
+        <item name="android:textSize">50sp</item>
+    </style>
+    <style name="SubTextTitle">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+
+
+
+
+
+</resources>

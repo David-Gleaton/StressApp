@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"
+    tools:context=".InputDataInput">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/InputTitleTextInput"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            style="@style/MediumTextTitle"
+            android:text="@string/TitleExercise"/>
+
+        <TextView
+            android:id="@+id/TextforHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_below="@id/InputTitleTextInput"
+            style="@style/MediumTextTitle"
+            android:text="@string/Hours"
+            />
+
+        <EditText
+            android:id="@+id/EditHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/TextforHours"
+            android:layout_alignBaseline="@id/TextforHours"
+            style="@style/MediumTextTitle"
+            android:text="@string/DefaultEating"
+            android:inputType="number"
+            android:maxLength="2"
+            />
+
+        <TextView
+            android:id="@+id/TextforMins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextforHours"
+            style="@style/MediumTextTitle"
+            android:text="@string/Mins"
+            />
+
+        <EditText
+            android:id="@+id/EditMins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/TextforMins"
+            android:layout_alignBaseline="@id/TextforMins"
+            style="@style/MediumTextTitle"
+            android:text="@string/DefaultEating"
+            android:inputType="number"
+            android:maxLength="2"
+            />
+        <Button
+            android:id="@+id/Confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EditMins"
+            android:text="@string/confirm"
+            android:onClick="ExerciseConfirm"
+            />
+
+        <TextView
+            android:id="@+id/SubInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Confirm"
+            style="@style/SubTextTitle"
+            android:text="@string/SubExcerciseHeading"
+            />
+
+
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

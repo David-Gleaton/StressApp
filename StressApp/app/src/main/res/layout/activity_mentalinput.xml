@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"
+    tools:context=".InputDataInput">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/InputTitleTextInput"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            style="@style/MediumTextTitle"
+            android:text="@string/TitleMental"/>
+
+        <ImageView
+            android:id="@+id/SadFace"
+            android:layout_below="@id/InputTitleTextInput"
+            android:layout_marginTop="20sp"
+            android:layout_toLeftOf="@id/NeutralFace"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sad"
+            android:onClick="MentalConfirm"
+            android:tag="Sad"
+            />
+
+
+        <ImageView
+            android:id="@+id/NeutralFace"
+            android:layout_below="@id/InputTitleTextInput"
+            android:layout_marginTop="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/neutral"
+            android:onClick="MentalConfirm"
+            android:tag="Neutral"
+            />
+
+        <ImageView
+            android:id="@+id/HappyFace"
+            android:layout_below="@id/InputTitleTextInput"
+            android:layout_marginTop="20sp"
+            android:layout_toEndOf="@id/NeutralFace"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/happy"
+            android:onClick="MentalConfirm"
+            android:tag="Happy"
+            />
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

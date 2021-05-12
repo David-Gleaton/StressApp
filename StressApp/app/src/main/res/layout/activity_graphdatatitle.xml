@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"
+    tools:context=".GraphDataTitle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:id="@+id/InputTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/graphtitletitle"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            style="@style/MediumTextTitle"
+             />
+
+        <Button
+            android:id="@+id/EatingHabitsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/SleepingHabitsButton"
+            android:onClick="OptionSelect"
+            android:text="@string/eating" />
+
+        <Button
+            android:id="@+id/SleepingHabitsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/ExerciseButton"
+            android:onClick="OptionSelect"
+            android:text="@string/sleeping" />
+
+        <Button
+            android:id="@+id/ExerciseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/CenterForVert"
+            android:onClick="OptionSelect"
+            android:text="@string/exercise" />
+
+        <View
+            android:id="@+id/CenterForVert"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"/>
+
+
+        <Button
+            android:id="@+id/SocialButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/CenterForVert"
+            android:onClick="OptionSelect"
+            android:text="@string/social" />
+
+        <Button
+            android:id="@+id/FinanceButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/SocialButton"
+            android:onClick="OptionSelect"
+            android:text="@string/finances" />
+
+
+        <Button
+            android:id="@+id/MentalButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/FinanceButton"
+            android:onClick="OptionSelect"
+            android:text="@string/mental" />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

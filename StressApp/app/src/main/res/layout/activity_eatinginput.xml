@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"
+    tools:context=".InputDataInput">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/InputTitleTextInput"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            style="@style/MediumTextTitle"
+            android:text="@string/TitleEating"/>
+
+        <TextView
+            android:id="@+id/TextforBreakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_below="@id/InputTitleTextInput"
+            style="@style/MediumTextTitle"
+            android:text="@string/Breakfast"
+            />
+
+        <EditText
+            android:id="@+id/EditBreakfast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/TextforBreakfast"
+            android:layout_alignBaseline="@id/TextforBreakfast"
+            style="@style/MediumTextTitle"
+            android:text="@string/DefaultEating"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:id="@+id/TextforLunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextforBreakfast"
+            style="@style/MediumTextTitle"
+            android:text="@string/Lunch"
+            />
+
+        <EditText
+            android:id="@+id/EditLunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/TextforLunch"
+            android:layout_alignBaseline="@id/TextforLunch"
+            style="@style/MediumTextTitle"
+            android:text="@string/DefaultEating"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:id="@+id/TextforDinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextforLunch"
+            style="@style/MediumTextTitle"
+            android:text="@string/Dinner"
+            />
+
+        <EditText
+            android:id="@+id/EditDinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/TextforDinner"
+            android:layout_alignBaseline="@id/TextforDinner"
+            style="@style/MediumTextTitle"
+            android:text="@string/DefaultEating"
+            android:inputType="number"
+            />
+
+        <Button
+            android:id="@+id/Confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextforDinner"
+            android:text="@string/confirm"
+            android:onClick="EatConfirm"
+            />
+
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

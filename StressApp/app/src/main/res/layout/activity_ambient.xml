@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"
+    tools:context=".DistractionInput">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+            android:id="@+id/AmbientTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ambient_title"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            style="@style/MediumTextTitle"
+            />
+
+        <Button
+            android:id="@+id/WavesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/AmbientTitleText"
+            android:layout_marginTop="200dp"
+            android:onClick="AmbientOptionSelect"
+            android:text="@string/waves" />
+
+        <Button
+            android:id="@+id/WindButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/WavesButton"
+            android:layout_marginTop="10dp"
+            android:onClick="AmbientOptionSelect"
+            android:text="@string/chimes" />
+
+        <Button
+            android:id="@+id/FireButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/WindButton"
+            android:layout_marginTop="10dp"
+            android:onClick="AmbientOptionSelect"
+            android:text="@string/fire" />
+
+        <View
+            android:id="@+id/CenterForVert"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

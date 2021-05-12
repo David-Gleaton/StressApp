@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"
+    tools:context=".InputDataInput">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/InputTitleTextInput"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                style="@style/BigTextTitle"
+                android:text="@string/TitleSleeping"/>
+
+
+                <TextView
+                    android:layout_marginTop="20sp"
+                    android:id="@+id/TextforWake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/InputTitleTextInput"
+                    android:layout_centerHorizontal="true"
+                    style="@style/MediumTextTitle"
+                    android:text="@string/Woke_Up"
+                    />
+
+
+                <TimePicker
+                    android:id="@+id/WakePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:timePickerMode="spinner"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/TextforWake"/>
+
+
+                <TextView
+                    android:id="@+id/TextforSleep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/WakePicker"
+                    android:layout_centerHorizontal="true"
+                    style="@style/MediumTextTitle"
+                    android:text="@string/Slept"
+                    />
+
+
+                <TimePicker
+                    android:id="@+id/SleepPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:timePickerMode="spinner"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/TextforSleep"/>
+
+                <Button
+                    android:id="@+id/Confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/SleepPicker"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/confirm"
+                    android:onClick="SleepConfirm"
+                    />
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

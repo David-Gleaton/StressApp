@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.stressapp">
+
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/LightPink">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.stressapp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <activity
+            android:name=".Settings"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".InputDataTitle"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".InputDataInput"
+            android:parentActivityName=".InputDataTitle" />
+        <activity
+            android:name=".DistractionTitle"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".DistractionInput"
+            android:parentActivityName=".DistractionTitle"/>
+        <activity
+            android:name=".ProfileTitle"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".GraphDataTitle"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".GraphDataGraph"
+            android:parentActivityName=".GraphDataTitle"/>
+        <activity
+            android:name=".DeveloperArea"
+            android:parentActivityName=".Settings"/>
+
+
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

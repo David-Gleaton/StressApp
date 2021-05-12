@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/TitleImage"
+            android:layout_width="307dp"
+            android:layout_height="374dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/settingswhite" />
+
+
+        <TextView
+            android:id="@+id/TitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/options"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/TitleImage"
+            style="@style/BigTextTitle"
+            />
+
+        <Spinner
+            android:id="@+id/ThemeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/TitleText"
+            />
+
+        <Button
+            android:id="@+id/StartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/ThemeSpinner"
+            android:onClick="OnStartClick"
+            android:text="@string/confirm"
+            />
+        <Button
+            android:id="@+id/Developer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/StartButton"
+            android:onClick="OnDevClick"
+            android:text="@string/DevButton"
+            />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
